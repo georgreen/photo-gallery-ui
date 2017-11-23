@@ -1,0 +1,28 @@
+<md-expansion-panel class="expansion-panel">
+  <md-expansion-panel-header>
+    <md-panel-title>
+      <md-icon>
+        {{category.icon}}
+      </md-icon>
+    </md-panel-title>
+
+    <md-panel-description>
+      {{category.name}}
+    </md-panel-description>
+  </md-expansion-panel-header>
+
+  <md-list *ngIf="!markup">
+    <md-list-item
+    *ngFor="let project of category.projects" class="select-item">
+      <md-icon mdListIcon>{{project.icon}}</md-icon>
+      <h3 mdLine> {{project.name}} </h3>
+    </md-list-item>
+  </md-list>
+
+  <md-list *ngIf="markup">
+    <md-list-item class="select-item">
+      <ng-content class="ng-markup">
+      </ng-content>
+    </md-list-item>
+  </md-list>
+</md-expansion-panel>

@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+{
+    border: 1px solid red;
+}
+
+body {
+    margin: 0px;
+}
+
+/*
+*Side bar item styles
+*/
+.mat-expansion-panel-body {
+    padding: 0 0px 0px !important;
+}
+
+.mat-card-title {
+    margin-bottom: 0px !important;
+}
+
+.mat-expansion-panel {
+    box-shadow: none !important;
+}
+
+/*
+*Sidebar styles
+*/
+.mat-drawer {
+    box-shadow: 1px 0 15px rgba(0,0,0,0.05);
+}

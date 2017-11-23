@@ -1,2 +1,10 @@
-<router-outlet></router-outlet>
+<md-sidenav-container [class]="apptheme">
+    <app-navbar class="navbar" (toggle)="toggleSideBar()"></app-navbar>
 
+    <app-app-sidebar (themeTransition)="onThemeChange($event)"
+    [sideBarState]="sideBarState" (closeSidebar)="toggleSideBar()">
+    </app-app-sidebar>
+
+    <router-outlet class="content"></router-outlet>
+
+</md-sidenav-container>

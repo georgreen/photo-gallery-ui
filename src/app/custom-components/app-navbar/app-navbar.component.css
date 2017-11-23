@@ -1,0 +1,30 @@
+md-toolbar {
+    height: 4em;
+}
+
+.left-tool-bar {
+    height: 2em;
+    width: 40em;
+    padding: 0px;
+    margin-left: 15em;
+    margin-bottom: 0px;
+}
+
+.title {
+
+}
+
+.notification {
+    margin-left: 16em;
+    margin-right: 1em;
+}
+
+.search {
+    margin-left: 8em;
+}
+
+.face {
+    margin-left: 8em;
+}
+
+
