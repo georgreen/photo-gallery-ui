@@ -1,0 +1,40 @@
+md-sidenav {
+  width: 20em;
+}
+
+.side-by-side {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.close-side-bar {
+  margin-left: 4em;
+  cursor: pointer;
+}
+
+.dashbord-icon {
+  width: 3.2em;
+}
+
+.dashboard-content {
+  margin-left: 1em;
+}
+
+md-card {
+  padding: 0px;
+  height: 3em;
+  padding-top: 2em;
+  padding-left: 1.5em;
+}
+
+header {
+  height: 4em;
+}
+
+main {
+  margin-top: 4em;
+}
+
+footer {
+  margin-top: 10em;
+}

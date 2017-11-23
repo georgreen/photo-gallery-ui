@@ -1,3 +1,19 @@
-<p>
-  app-navbar works!
-</p>
+<md-toolbar>
+    <button md-icon-button (click)="clickMenu()">
+        <md-icon>menu</md-icon>
+    </button>
+
+    <div class="left-tool-bar">
+        <span class="title">
+            Top Posts
+        </span>
+
+        <md-icon class="notification">notifications</md-icon>
+    
+        <md-input-container class="search">
+            <input mdInput placeholder="Search !" value="">
+        </md-input-container>
+    
+        <md-icon class="face">face</md-icon>
+    </div>
+</md-toolbar>

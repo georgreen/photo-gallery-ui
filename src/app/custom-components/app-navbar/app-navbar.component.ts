@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter} from '@angular/core';
 
 @Component({
-  selector: 'app-app-navbar',
+  selector: 'app-navbar',
   templateUrl: './app-navbar.component.html',
   styleUrls: ['./app-navbar.component.css']
 })
-export class AppNavbarComponent implements OnInit {
+export class AppNavbarComponent {
+  @Output() toggle = new EventEmitter;
 
-  constructor() { }
-
-  ngOnInit() {
+  clickMenu() {
+    this.toggle.emit();
   }
 
 }

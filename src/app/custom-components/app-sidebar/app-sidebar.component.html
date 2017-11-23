@@ -1,3 +1,29 @@
-<p>
-  app-sidebar works!
-</p>
+<md-sidenav class="app-sidenav" [opened]="sideBarState">
+    <header>
+      <md-card>
+        <md-icon class="dashbord-icon">dashboard</md-icon>
+        <md-card-content class="side-by-side dashboard-content"> Dashboard </md-card-content>
+        <md-icon class="close-side-bar" (click)="closedSideBar()">keyboard_arrow_left</md-icon>
+      </md-card>
+    </header>
+
+    <main>
+      <app-sidebar-item
+      *ngFor="let category of categories" [category]="category">
+      </app-sidebar-item>
+    </main>
+
+    <footer>
+      <app-sidebar-item [category]="settings" [markup]="true">
+        <!____Switch app theme>
+        <md-icon mdListIcon>{{"invert_colors"}}</md-icon>
+        <md-select placeholder="App theme" [(ngModel)]="appTheme" (change)="changeTheme()">
+          <md-option *ngFor="let theme of themes" [value]="theme.value">
+            {{ theme.value }}
+          </md-option>
+        </md-select>
+      </app-sidebar-item>
+    </footer>
+
+</md-sidenav>
+
